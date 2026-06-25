@@ -130,7 +130,7 @@ const T = {
       "Saat konkreettisia, räätälöityjä ehdotuksia juuri sinun toimintaasi — täysin ilman sitoutumista",
     ],
     contact_email_label: "Sähköposti:",
-    contact_email: "esimerkkierkki@gmail.com",
+    contact_email: "casolutions.fi@gmail.com",
     copy_btn: "Kopioi osoite",
   },
   en: {
@@ -240,7 +240,7 @@ const T = {
       "You'll receive concrete, tailored suggestions for your specific operations — completely commitment-free",
     ],
     contact_email_label: "Email:",
-    contact_email: "esimerkkierkki@gmail.com",
+    contact_email: "casolutions.fi@gmail.com",
     copy_btn: "Copy address",
   }
 };
@@ -321,7 +321,7 @@ export default function CAS() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior:"smooth" });
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("esimerkkierkki@gmail.com");
+    navigator.clipboard.writeText("casolutions.fi@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
