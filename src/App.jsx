@@ -389,7 +389,7 @@ export default function CAS() {
             color:"#00ffff", fontSize:13,
           }}>{t.hero_badge}</div>
 
-          <h1 style={{ fontSize:"clamp(52px,8vw,90px)", fontWeight:"bold", lineHeight:1.0, margin:"0 0 28px" }}>
+          <h1 style={{ fontSize:"clamp(52px,8vw,90px)", fontWeight:"bold", lineHeight:1.0, margin:"0 0 28px", color:"#ffffff" }}>
             {t.hero_h[0]}<br />
             <span style={{ background:"linear-gradient(90deg,#00ffff,#ccff00)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>
               {t.hero_h[1]}
@@ -787,6 +787,15 @@ export default function CAS() {
 
 
       <style>{`
+        :root {
+          color-scheme: dark;
+        }
+        html, body {
+          background: #1c1c1c !important;
+          color: #ffffff !important;
+          margin: 0;
+          padding: 0;
+        }
         @keyframes gridMove {
           0%   { transform: translate(0, 0); }
           100% { transform: translate(${CELL}px, ${CELL}px); }
